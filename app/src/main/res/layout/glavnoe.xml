@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/analisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:drawableLeft="@drawable/icons"
+        android:ems="10"
+        android:hint="Поиск анализов"
+        android:inputType="textPersonName"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="132sp"
+        android:layout_height="24sp"
+        android:layout_marginTop="30dp"
+        android:text="Акция и новости"
+        app:layout_constraintTop_toBottomOf="@+id/analisp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="132sp"
+        android:layout_height="24sp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="258dp"
+        android:text="Акция и новости"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/banner2"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="126sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+
+
+        android:backgroundTint="@color/blue"
+        android:text="Популярные"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_1"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        tools:ignore="NotSibling" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="126sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="18dp"
+        android:backgroundTint="@color/grey"
+
+        android:text="Комплексные"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_2"
+        tools:ignore="NotSibling"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="78sp"
+        android:layout_height="48sp"
+
+        android:layout_marginStart="16dp"
+
+        android:backgroundTint="@color/grey"
+        android:text="Covid"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/button_1"
+        tools:ignore="NotSibling"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <ImageButton
+        android:id="@+id/image_Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="74dp"
+        android:background="@android:drawable/divider_horizontal_dark"
+        app:layout_constraintEnd_toStartOf="@+id/image_Button_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_1"
+        app:srcCompat="@drawable/analis" />
+
+    <ImageButton
+        android:id="@+id/image_Button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        app:layout_constraintStart_toEndOf="@+id/image_Button_2"
+        app:srcCompat="@drawable/poderjka"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <ImageButton
+        android:id="@+id/image_Button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:background="@android:drawable/divider_horizontal_dark"
+        app:layout_constraintStart_toEndOf="@+id/image_Button1"
+        app:srcCompat="@drawable/result"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <ImageButton
+        android:id="@+id/image_Button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="25dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_Button_3"
+        app:srcCompat="@drawable/users"
+        tools:layout_editor_absoluteY="553dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
